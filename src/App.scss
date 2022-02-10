@@ -1,0 +1,14 @@
+.nav-main{
+  height: 68px;
+  background: #F5F6F7;
+  @apply w-full;
+
+  li {
+    cursor: pointer;
+    margin-right: 30px;
+  }
+
+  li:hover{
+    color: #1C2080;
+  }
+}
