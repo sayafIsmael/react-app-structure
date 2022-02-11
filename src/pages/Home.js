@@ -54,16 +54,16 @@ export default function Home() {
             <div className="default-spacing">
                 <ul className="flex flex-wrap -mb-px">
                     <li className="mr-2" onClick={() => setTab(1)}>
-                        <p href="" className={`${tab == 1 ? "border-b-2 text-primary" : "text-text-inactive"} cursor-pointer inline-block text-xl py-1 mr-10 font-medium text-center  border-transparent hover:text-text-hover`}>Leaders</p>
+                        <p className={`${tab == 1 ? "border-b-2 text-primary" : "text-text-inactive"} cursor-pointer inline-block text-xl py-1 mr-10 font-medium text-center  border-transparent hover:text-text-hover`}>Leaders</p>
                     </li>
                     <li className="mr-2" onClick={() => setTab(2)}>
-                        <p href="" className={`${tab == 2 ? "border-b-2 text-primary" : "text-text-inactive"} cursor-pointer inline-block text-xl py-1 mr-10 font-medium text-center  border-transparent hover:text-text-hover`} aria-current="page">Stocks</p>
+                        <p className={`${tab == 2 ? "border-b-2 text-primary" : "text-text-inactive"} cursor-pointer inline-block text-xl py-1 mr-10 font-medium text-center  border-transparent hover:text-text-hover`} aria-current="page">Stocks</p>
                     </li>
                     <li className="mr-2" onClick={() => setTab(3)}>
-                        <p href="" className={`${tab == 3 ? "border-b-2 text-primary" : "text-text-inactive"} cursor-pointer inline-block text-xl py-1 mr-10 font-medium text-center  border-transparent hover:text-text-hover`}>Crypto</p>
+                        <p className={`${tab == 3 ? "border-b-2 text-primary" : "text-text-inactive"} cursor-pointer inline-block text-xl py-1 mr-10 font-medium text-center  border-transparent hover:text-text-hover`}>Crypto</p>
                     </li>
                     <li className="mr-2" onClick={() => setTab(4)}>
-                        <p href="" className={`${tab == 4 ? "border-b-2 text-primary" : "text-text-inactive"} cursor-pointer inline-block text-xl py-1 mr-10 font-medium text-center  border-transparent hover:text-text-hover`}>Options (comming soon)</p>
+                        <p className={`${tab == 4 ? "border-b-2 text-primary" : "text-text-inactive"} cursor-pointer inline-block text-xl py-1 mr-10 font-medium text-center  border-transparent hover:text-text-hover`}>Options (comming soon)</p>
                     </li>
                 </ul>
 
@@ -171,26 +171,75 @@ export default function Home() {
                     <div className="p-12  border-r border-sm-border">
                         <h1 className='default-header font-medium ds-title my-5'>Rest assured, you’re in good hands</h1>
                         <div className="flex items-center mb-5">
-                            <img alt="" className="w-6 h-6" src="/images/check-icon.png"/>
+                            <img alt="" className="w-6 h-6" src="/images/check-icon.png" />
                             <p className="text-xl mx-2">Assigned ownership of your coins</p>
                         </div>
                         <div className="flex items-center mb-5">
-                            <img alt="" className="w-6 h-6" src="/images/check-icon.png"/>
+                            <img alt="" className="w-6 h-6" src="/images/check-icon.png" />
                             <p className="text-xl mx-2">Cutting edge security</p>
                         </div><div className="flex items-center mb-5">
-                            <img alt="" className="w-6 h-6" src="/images/check-icon.png"/>
+                            <img alt="" className="w-6 h-6" src="/images/check-icon.png" />
                             <p className="text-xl mx-2">Digital assets backed by real world assets ²</p>
                         </div><div className="flex items-center mb-5">
-                            <img alt="" className="w-6 h-6" src="/images/check-icon.png"/>
+                            <img alt="" className="w-6 h-6" src="/images/check-icon.png" />
                             <p className="text-xl mx-2">Crime prevention and good-faith policy ³</p>
                         </div>
                     </div>
                     <div className="p-12 mx-auto">
-                        <img alt="" src="/images/sec-2.png"/>
+                        <img alt="" src="/images/sec-2.png" />
                     </div>
                 </div>
             </div>
 
+            <div className="default-spacing">
+                <div class="grid grid-cols-2 gap-4">
+                    <img alt="" src="/images/container.png" className="ml-16" />
+                    <div className="my-auto">
+                        <h1 className='default-header font-medium ds-title'>Connecting the world of assets</h1>
+                        <p className="text-lg desc-one my-5">Structure was created to give people around the world access to the same investment assets.  We’re on a mission to empower investors of all types through secure and easy-to-use  financial tools.</p>
+                        <p className="text-lg desc-one mb-5">Interested in helping us build the future of finance? Checkout our careers page to get started.</p>
+                        <button className="btn-main text-lg">View open positions</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div className="default-spacing">
+                <div class="grid grid-cols-2 gap-4">
+                    <div className="sm:w-full my-auto">
+                        <div className="my-auto">
+                            <h1 className='default-header font-medium'>Sign up today and get no-fee trading for life.</h1>
+                            <p className="text-lg desc-one mt-5">No market closes. No trading fees. All the stocks and crypto coins you love.</p>
+                        </div>
+
+                        <div className="mt-14">
+                            <p className="text-lg desc-one mb-5">Ready to start trading?</p>
+                            <div className="flex flex-wrap mb-2">
+                                <div className="w-full md:w-2/12 mb-6 md:mb-0">
+                                    <div className="relative">
+                                        <select className="text-lg block input-height appearance-none w-full bg-gray-200 text-gray-700 py-3 px-3 rounded leading-tight border border-input-box focus:outline-none focus:border-input-border bg-input-box" id="grid-state"
+                                            value={countryCode} onChange={(e) => handleCodepicker(e)}>
+                                            {codes.map((item, i) => <option key={i}>{item.code} {item.dial_code}</option>)}
+                                        </select>
+                                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                            <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="w-full md:w-6/12 px-3 mb-6 md:mb-0">
+                                    <input className="text-lg appearance-none block input-height w-full bg-gray-200 text-gray-700 rounded py-3 px-4 leading-tight border border-input-box focus:outline-none focus:border-input-border bg-input-box" id="grid-city" type="text" placeholder="Enter your phone number" />
+                                </div>
+                                <div className="w-full md:w-4/12 px-2 mb-6 md:mb-0">
+                                    <button className="btn-main text-lg">Send link</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="">
+                        <img alt="" className="mx-auto -mb-28" src="/images/iphone.png" />
+                    </div>
+                </div>
+            </div>
         </div>
     )
 
