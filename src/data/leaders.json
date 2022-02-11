@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "image": "/images/thumb/Ellipse-1.png",
+        "title": "Yearn Classic Finance",
+        "amount": "20.19",
+        "flow": "109.3"
+    },
+    {
+        "id": 2,
+        "image": "/images/thumb/Ellipse.png",
+        "title": "Decentraland",
+        "amount": "3.12",
+        "flow": "27.1"
+    },
+    {
+        "id": 3,
+        "image": "/images/thumb/Ellipse-2.png",
+        "title": "SHIBA INU",
+        "amount": "0.00005225",
+        "flow": "21.4"
+    },
+    {
+        "id": 4,
+        "image": "/images/thumb/Ellipse-3.png",
+        "title": "Avalanche",
+        "amount": "83.31",
+        "flow": "22.3"
+    },
+    {
+        "id": 5,
+        "image": "/images/thumb/Ellipse-5.png",
+        "title": "Internet Computer",
+        "amount": "46.03",
+        "flow": "16.4"
+    },
+    {
+        "id": 6,
+        "image": "/images/thumb/Ellipse-4.png",
+        "title": "Cosmos",
+        "amount": "31.84",
+        "flow": "12.0"
+    }
+]

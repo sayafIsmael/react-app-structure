@@ -1,14 +1,65 @@
 .nav-main{
   height: 68px;
-  background: #F5F6F7;
-  @apply w-full;
+  @apply w-full bg-input-box;
 
   li {
     cursor: pointer;
-    margin-right: 30px;
+    @apply mx-4;
   }
 
-  li:hover{
+  .nav-btn:hover, li:hover{
     color: #1C2080;
   }
+}
+
+.input-height{
+  height: 70px;
+}
+
+.btn-main {
+  padding: 20px 28px;
+@apply border border-primary bg-primary text-white rounded-lg 
+}
+
+.btn-nav {
+  padding: 10px 15px;
+  @apply border border-primary bg-primary text-white rounded-lg 
+}
+
+.btn-main:hover, .btn-nav:hover{
+  @apply border border-primary text-primary;
+  background-color: transparent;
+}
+
+.default-spacing{
+  margin: 80px 0px;
+}
+
+.default-header{
+  font-size: 44px;
+}
+
+
+.desc-one{
+  max-width: 474px;
+}
+
+.lead-thumb{
+  height: 45px;
+  width: 45px;
+}
+
+.claim{
+  height: 268px;
+  background: url("../public/images/claim-spot.png");
+  background-size: cover;
+}
+
+.ds-title{
+  max-width: 476px;
+}
+
+
+.card-dsc{
+  max-width: 306px;
 }
