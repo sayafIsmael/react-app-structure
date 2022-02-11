@@ -35,19 +35,6 @@
   margin: 80px 0px;
 }
 
-@media only screen and (max-width: 768px) {
-  .default-spacing{
-    margin: 60px 0px;
-  }
-
-  .spacing{
-    margin: 60px 0px;
-  }
-
-  .right-item{
-    width: 200px;
-  }
-}
 
 .default-header{
   font-size: 44px;
@@ -80,4 +67,38 @@
 
 .fotter-text{
   max-width: 978px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .default-spacing{
+    margin: 60px 0px;
+  }
+
+  .spacing{
+    margin: 60px 0px;
+  }
+
+  .right-item{
+    width: 200px;
+  }
+
+  .claim{
+    height: 228px;
+    background-size: cover;
+    background: url("../public/images/claim-spot-md.png");
+    background-repeat: no-repeat;
+  }
+  
+  .desc-one{
+    max-width: 400px;
+  }
+
+  .ds-title{
+    max-width: 100%;
+  }
+
+  .bt-title{
+    font-size: 34px;
+  }
 }
