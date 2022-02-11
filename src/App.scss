@@ -103,5 +103,25 @@
   .btn-main {
     padding: 15px 22px;
   }
+
+  .default-header{
+    font-size: 40px;
+  }
   
+}
+
+@media only screen and (max-width: 320px) {
+  .default-header{
+    font-size: 34px;
+  }
+  
+  .claim{
+    height: 450px;
+    background-size: cover;
+    background: url("../public/images/claim-spot-sm.png");
+    background-repeat: no-repeat;
+    @apply w-full p-5 text-center;
+  }
+  
+
 }
