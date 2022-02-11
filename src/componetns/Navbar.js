@@ -17,7 +17,7 @@ export default () => {
                     </Link>
 
                     <ul className="flex text-center">
-                        <li><Link to="#">All Assets</Link></li>
+                        <li className="lg:block md:hidden"><Link to="#">All Assets</Link></li>
                         <li><Link to="#">Stocks </Link></li>
                         <li><Link to="#">Crypto </Link></li>
                         <li><Link to="#">Trade </Link></li>
@@ -25,7 +25,7 @@ export default () => {
 
                     <div className='flex justify-end w-3/12'>
                         <div className="flex ml-auto">
-                            <a className="nav-btn cursor-pointer mr-10 my-auto">Sign up</a>
+                            <a className="nav-btn cursor-pointer mr-10 my-auto lg:block md:hidden">Sign up</a>
                             <button className="btn-nav">Get the app</button>
                         </div>
                     </div>

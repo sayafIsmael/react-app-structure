@@ -14,10 +14,10 @@ export default function Home() {
     return (
         <div className="container mx-auto">
             <div className="default-spacing">
-                <div class="grid grid-cols-2 gap-4">
+                <div className="lg:grid lg:grid-cols-2 gap-4">
                     <div className="sm:w-full my-auto">
                         <div className="my-auto">
-                            <h1 className='default-header font-medium'>Buy stocks with crypto</h1>
+                            <h2 className='default-header font-medium'>Buy stocks with crypto</h2>
                             <p className="text-lg desc-one mt-5">No market closes. No trading fees. All the stocks and crypto coins you love.</p>
                         </div>
 
@@ -39,13 +39,13 @@ export default function Home() {
                                     <input className="text-lg appearance-none block input-height w-full bg-gray-200 text-gray-700 rounded py-3 px-4 leading-tight border border-input-box focus:outline-none focus:border-input-border bg-input-box" id="grid-city" type="text" placeholder="Enter your phone number" />
                                 </div>
                                 <div className="w-full md:w-4/12 px-2 mb-6 md:mb-0">
-                                    <button className="btn-main text-lg">Send link</button>
+                                    <button className="btn-main lg:text-lg md:text-md ">Send link</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="">
+                    <div className="lg:block md:hidden">
                         <img alt="" className="mx-auto" src="/images/rectangle5.png" />
                     </div>
                 </div>
@@ -67,8 +67,8 @@ export default function Home() {
                     </li>
                 </ul>
 
-                <div class="grid grid-cols-2 gap-4 mt-5">
-                    <div class="grid grid-cols-2 gap-4">
+                <div className="lg:grid lg:grid-cols-2 lg:gap-4 mt-5">
+                    <div className="grid grid-cols-2 gap-4">
                         {leaders.map((item, i) =>
                             <Lead key={i}
                                 title={item.title}
@@ -78,26 +78,36 @@ export default function Home() {
                             />
                         )}
                     </div>
-                    <div className="my-auto mx-24">
-                        <h1 className='default-header font-medium'>All of your assets, now in one place</h1>
+                    <div className="lg:my-auto lg:mx-24 spacing md:px-24 lg:px-0">
+                        <h2 className='default-header font-medium desc-one'>All of your assets, now in one place</h2>
                         <p className="text-lg desc-one my-5">Deposit crypto to the Structure Mobile App and buy stocks, crypto, and other assets in seconds.</p>
-                        <button className="btn-main text-lg">Browse all assets</button>
+                        <button className="btn-main lg:text-lg md:text-md  md:w-full">Browse all assets</button>
                     </div>
                 </div>
             </div>
 
             <div className="default-spacing">
-                <div className="claim mx-auto w-10/12">
-
+                <div className="claim mx-auto w-10/12 shadow">
+                    <div className="h-full flex my-auto items-center mx-5 justify-between">
+                        <div className="">
+                            <h2 className="text-xl font-medium">Sign up and get no-fee trading for life</h2>
+                            <p className="text-lg desc-one my-5 desc-one">We’re giving our first 5,000 users lifetime access to totally free trading.</p>
+                        </div>
+                        <div className="lg:mx-10 right-item">
+                            <p className="text-lg text-center">Spots left</p>
+                            <h2 className='default-header font-medium desc-one text-center'>2,631</h2>
+                            <button className="btn-main lg:text-lg md:text-md  md:w-full">Claim your spot</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div className="default-spacing">
-                <div class="grid grid-cols-2 gap-4 mt-5">
+                <div className="grid grid-cols-2 gap-4 mt-5">
                     <div className="my-auto">
-                        <h1 className='default-header font-medium'>Trade crypto and stocks</h1>
+                        <h2 className='default-header font-medium'>Trade crypto and stocks</h2>
                         <p className="text-lg desc-one my-5">Have $200 in Bitcoin and want to purchase $100 of a Tesla stock? No problem, Structure makes this easy with the tap of a button.</p>
-                        <button className="btn-main text-lg">Swap assets</button>
+                        <button className="btn-main lg:text-lg md:text-md ">Swap assets</button>
                     </div>
                     <div className="">
                         <img alt="" className="mx-auto" src="/images/rectangle5.png" />
@@ -110,19 +120,19 @@ export default function Home() {
                     <img alt="" className="mx-auto" src="/images/rectangle5.png" />
                 </div>
                 <div className="my-auto">
-                    <h1 className='default-header font-medium'>No market closes</h1>
+                    <h2 className='default-header font-medium'>No market closes</h2>
                     <p className="text-lg desc-one my-5">Trade stocks, crypto, and other assets on Structure 24/7.¹ Markets are always open, weekends and holidays included.</p>
-                    <button className="btn-main text-lg">Get access now</button>
+                    <button className="btn-main lg:text-lg md:text-md ">Get access now</button>
                 </div>
             </div>
 
             <div className="default-spacing">
-                <div class="grid grid-cols-2 gap-4 mt-5">
+                <div className="grid grid-cols-2 gap-4 mt-5">
                     <div className="my-auto">
-                        <h1 className='default-header font-medium'>No trading pair limitations</h1>
+                        <h2 className='default-header font-medium'>No trading pair limitations</h2>
                         <p className="text-lg desc-one my-5">Unlike Coinbase, Binance, and other crypto exchanges, any asset you own on Structure can be swapped with any crypto or stock we have available.</p>
                         <p className="text-lg desc-one my-10"> Swap $1 or more of Bitcoin for your favorite new alt coin. Trade $1 or more of your Tesla stock for another stock or crypto coin.</p>
-                        <button className="btn-main text-lg">Start trading</button>
+                        <button className="btn-main lg:text-lg md:text-md ">Start trading</button>
                     </div>
                     <div className="">
                         <img alt="" className="mx-auto" src="/images/rectangle5.png" />
@@ -135,19 +145,19 @@ export default function Home() {
                     <img alt="" className="mx-auto" src="/images/rectangle5.png" />
                 </div>
                 <div className="my-auto">
-                    <h1 className='default-header font-medium ds-title'>A better way to send and receive payments</h1>
+                    <h2 className='default-header font-medium ds-title'>A better way to send and receive payments</h2>
                     <p className="text-lg desc-one my-5">Send payments in the asset of your choice. On Structure, all assets work like money.</p>
                     <p className="text-lg desc-one mb-5">Received Bitcoin but really wanted Google stock? Accept payments in the asset of your choice.</p>
-                    <button className="btn-main text-lg">Send a payment</button>
+                    <button className="btn-main lg:text-lg md:text-md ">Send a payment</button>
                 </div>
             </div>
 
             <div className="default-spacing">
                 <div className="">
-                    <h1 className='default-header font-medium text-center'>Ready, set, trade</h1>
+                    <h2 className='default-header font-medium text-center'>Ready, set, trade</h2>
                     <p className="text-lg text-center my-5">Setup an account and start trading in less than 5 minutes.</p>
                 </div>
-                <div class="grid grid-cols-3 gap-4 mt-5">
+                <div className="grid grid-cols-3 gap-4 mt-5">
                     <div className="py-15">
                         <img alt="" className="mx-auto mb-10" src="/images/create-account-2.png" />
                         <h2 className="font-medium text-xl text-center">Create an account</h2>
@@ -167,9 +177,9 @@ export default function Home() {
             </div>
 
             <div className="default-spacing">
-                <div class="grid grid-cols-2 gap-4 shadow rounded-lg">
+                <div className="grid grid-cols-2 gap-4 shadow rounded-lg">
                     <div className="p-12  border-r border-sm-border">
-                        <h1 className='default-header font-medium ds-title my-5'>Rest assured, you’re in good hands</h1>
+                        <h2 className='default-header font-medium ds-title my-5'>Rest assured, you’re in good hands</h2>
                         <div className="flex items-center mb-5">
                             <img alt="" className="w-6 h-6" src="/images/check-icon.png" />
                             <p className="text-xl mx-2">Assigned ownership of your coins</p>
@@ -192,22 +202,22 @@ export default function Home() {
             </div>
 
             <div className="default-spacing">
-                <div class="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-4">
                     <img alt="" src="/images/container.png" className="ml-16" />
                     <div className="my-auto">
-                        <h1 className='default-header font-medium ds-title'>Connecting the world of assets</h1>
+                        <h2 className='default-header font-medium ds-title'>Connecting the world of assets</h2>
                         <p className="text-lg desc-one my-5">Structure was created to give people around the world access to the same investment assets.  We’re on a mission to empower investors of all types through secure and easy-to-use  financial tools.</p>
                         <p className="text-lg desc-one mb-5">Interested in helping us build the future of finance? Checkout our careers page to get started.</p>
-                        <button className="btn-main text-lg">View open positions</button>
+                        <button className="btn-main lg:text-lg md:text-md ">View open positions</button>
                     </div>
                 </div>
             </div>
-            
+
             <div className="default-spacing">
-                <div class="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-4">
                     <div className="sm:w-full my-auto">
                         <div className="my-auto">
-                            <h1 className='default-header font-medium'>Sign up today and get no-fee trading for life.</h1>
+                            <h2 className='default-header font-medium'>Sign up today and get no-fee trading for life.</h2>
                             <p className="text-lg desc-one mt-5">No market closes. No trading fees. All the stocks and crypto coins you love.</p>
                         </div>
 
@@ -229,7 +239,7 @@ export default function Home() {
                                     <input className="text-lg appearance-none block input-height w-full bg-gray-200 text-gray-700 rounded py-3 px-4 leading-tight border border-input-box focus:outline-none focus:border-input-border bg-input-box" id="grid-city" type="text" placeholder="Enter your phone number" />
                                 </div>
                                 <div className="w-full md:w-4/12 px-2 mb-6 md:mb-0">
-                                    <button className="btn-main text-lg">Send link</button>
+                                    <button className="btn-main lg:text-lg md:text-md ">Send link</button>
                                 </div>
                             </div>
                         </div>

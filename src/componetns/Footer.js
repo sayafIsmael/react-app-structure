@@ -6,7 +6,7 @@ export default () => {
     return (
         <footer className="w-full bg-input-box py-14">
             <div className="container mx-auto">
-                <div class="flex items-center">
+                <div className="flex items-center">
                     <ul className="flex w-9/12">
                         <li className="mr-12 font-medium text-primary text-xl"><Link to="#">About</Link></li>
                         <li className="mr-12 font-medium text-primary text-xl"><Link to="#">Terms & Conditions</Link></li>
@@ -27,7 +27,7 @@ export default () => {
                     <p className="">2  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae</p>
                 </div>
                 <div className="default-spacing">
-                    <div class="grid grid-cols-2 gap-5">
+                    <div className="grid grid-cols-2 gap-5">
                         <p>© Copyright 2021 Structure Financial, Inc. All Rights Reserved.
                             Neither Elon Musk nor Tim Cook are customers of Structure Financial, Inc.
                             Zero-commission refers to $0 commissions for accounts that trade tokenized assets via mobile devices. Please see our Commission and Fee Schedule.
