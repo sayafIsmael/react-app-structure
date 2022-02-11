@@ -18,7 +18,8 @@
 
 .btn-main {
   padding: 20px 28px;
-@apply border border-primary bg-primary text-white rounded-lg 
+  font-size: 18px ;
+  @apply border border-primary bg-primary text-white rounded-lg 
 }
 
 .btn-nav {
@@ -58,6 +59,7 @@
 
 .ds-title{
   max-width: 476px;
+  @apply md:max-w-full;
 }
 
 
@@ -94,11 +96,12 @@
     max-width: 400px;
   }
 
-  .ds-title{
-    max-width: 100%;
-  }
-
   .bt-title{
     font-size: 34px;
   }
+
+  .btn-main {
+    padding: 15px 22px;
+  }
+  
 }
