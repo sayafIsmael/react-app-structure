@@ -211,9 +211,12 @@ export default function Home() {
 
             <div className="default-spacing">
                 <div className="lg:grid lg:grid-cols-2 gap-4 lg:container lg:mx-auto">
-                    <img alt="" src="/images/container.png" className="lg:ml-40 lg:block md:hidden" />
-                    <img alt="" src="/images/container-2.png" className="lg:ml-40 lg:hidden md:block" />
-
+                    <div className="lg:flex md:hidden justify-end">
+                        <img className="mr-10" alt="" src="/images/container.png" />
+                    </div>
+                    <div className="lg:ml-40 lg:hidden md:block">
+                        <img alt="" src="/images/container-2.png" />
+                    </div>
                     <div className="lg:my-auto lg:ml-10 md:m-10">
                         <h2 className='default-header font-medium ds-title'>Connecting the world of assets</h2>
                         <p className="lg:mr-24 text-lg my-5 md:max-w-full;">Structure was created to give people around the world access to the same investment assets.  We’re on a mission to empower investors of all types through secure and easy-to-use  financial tools.</p>
