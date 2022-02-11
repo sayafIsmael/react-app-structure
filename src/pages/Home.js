@@ -53,7 +53,7 @@ export default function Home() {
                 </div>
 
                 <div className="default-spacing">
-                    <div className="md:overflow-x-hidden sm:overflow-x-scroll scrollbar-hidden">
+                    <div className="md:overflow-x-hidden overflow-x-scroll scrollbar-hidden">
                         <ul className="flex flex-wrap -mb-px menu-scroll">
                             <li className="mr-2" onClick={() => setTab(1)}>
                                 <p className={`${tab == 1 ? "border-b-2 text-primary" : "text-text-inactive"} cursor-pointer inline-block text-xl py-1 mr-10 font-medium text-center  border-transparent hover:text-text-hover`}>Leaders</p>
