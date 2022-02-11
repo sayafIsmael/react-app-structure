@@ -261,7 +261,7 @@ export default function Home() {
                     </div>
 
                     <div className="lg:col-span-6 md:col-span-5">
-                        <img alt="" className="mx-auto -mb-28 lg:block sm:hidden" src="/images/iphone.png" />
+                        <img alt="" className="mx-auto -mb-28 lg:block sm:hidden" src="/images/iPhone.png" />
                         <img alt="" className="mx-auto -mb-28 lg:hidden md:block" src="/images/iphone-2.png" />
                     </div>
                 </div>
