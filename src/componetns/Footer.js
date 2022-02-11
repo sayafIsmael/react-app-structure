@@ -8,11 +8,11 @@ export default () => {
             <div className="container mx-auto">
                 <div className="lg:flex grid items-center">
                     <ul className="md:flex sm:grid sm:grid-cols-2 lg:w-9/12 md:w-full lg:order-first md:order-last md:mt-10 lg:mt-0 sm:order-last sm:mt-5">
-                        <li className="md:mr-12 sm:text-sm font-medium text-primary md:text-xl sm:mb-5"><Link to="#">About</Link></li>
-                        <li className="md:mr-12 sm:text-sm font-medium text-primary md:text-xl sm:mb-5"><Link to="#">Terms & Conditions</Link></li>
-                        <li className="md:mr-12 sm:text-sm font-medium text-primary md:text-xl sm:mb-5"><Link to="#">Privacy Policy</Link></li>
-                        <li className="md:mr-12 sm:text-sm font-medium text-primary md:text-xl sm:mb-5"><Link to="#">White Paper</Link></li>
-                        <li className="sm:text-sm font-medium text-primary md:text-xl sm:mb-5"><Link to="#">Blog</Link></li>
+                        <li className="md:mr-12 sm:text-md font-medium text-primary md:text-xl sm:mb-5"><Link to="#">About</Link></li>
+                        <li className="md:mr-12 sm:text-md font-medium text-primary md:text-xl sm:mb-5"><Link to="#">Terms & Conditions</Link></li>
+                        <li className="md:mr-12 sm:text-md font-medium text-primary md:text-xl sm:mb-5"><Link to="#">Privacy Policy</Link></li>
+                        <li className="md:mr-12 sm:text-md font-medium text-primary md:text-xl sm:mb-5"><Link to="#">White Paper</Link></li>
+                        <li className="sm:text-md font-medium text-primary md:text-xl sm:mb-5"><Link to="#">Blog</Link></li>
                     </ul>
                     <ul className="flex lg:w-3/12 md:w-full">
                         <li className="mr-5 font-medium text-primary text-xl"><Link to="#"><img alt="facebook" src="/images/facebook.png" /></Link></li>
