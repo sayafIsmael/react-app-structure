@@ -6,13 +6,13 @@ export default () => {
     return (
         <footer className="w-full bg-input-box py-14">
             <div className="container mx-auto">
-                <div className="lg:flex md:grid items-center">
-                    <ul className="flex lg:w-9/12 md:w-full lg:order-first md:order-last md:mt-10 lg:mt-0">
-                        <li className="mr-12 font-medium text-primary text-xl"><Link to="#">About</Link></li>
-                        <li className="mr-12 font-medium text-primary text-xl"><Link to="#">Terms & Conditions</Link></li>
-                        <li className="mr-12 font-medium text-primary text-xl"><Link to="#">Privacy Policy</Link></li>
-                        <li className="mr-12 font-medium text-primary text-xl"><Link to="#">White Paper</Link></li>
-                        <li className="font-medium text-primary text-xl"><Link to="#">Blog</Link></li>
+                <div className="lg:flex grid items-center">
+                    <ul className="md:flex sm:grid sm:grid-cols-2 lg:w-9/12 md:w-full lg:order-first md:order-last md:mt-10 lg:mt-0 sm:order-last sm:mt-5">
+                        <li className="md:mr-12 sm:text-sm font-medium text-primary md:text-xl sm:mb-5"><Link to="#">About</Link></li>
+                        <li className="md:mr-12 sm:text-sm font-medium text-primary md:text-xl sm:mb-5"><Link to="#">Terms & Conditions</Link></li>
+                        <li className="md:mr-12 sm:text-sm font-medium text-primary md:text-xl sm:mb-5"><Link to="#">Privacy Policy</Link></li>
+                        <li className="md:mr-12 sm:text-sm font-medium text-primary md:text-xl sm:mb-5"><Link to="#">White Paper</Link></li>
+                        <li className="sm:text-sm font-medium text-primary md:text-xl sm:mb-5"><Link to="#">Blog</Link></li>
                     </ul>
                     <ul className="flex lg:w-3/12 md:w-full">
                         <li className="mr-5 font-medium text-primary text-xl"><Link to="#"><img alt="facebook" src="/images/facebook.png" /></Link></li>
@@ -21,13 +21,13 @@ export default () => {
                     </ul>
                 </div>
 
-                <div className="my-10"> 
+                <div className="md:my-10 sm:my-5"> 
                     <p className="w-10/12">1  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
                     <p className="my-5">2  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae</p>
                     <p className="">2  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae</p>
                 </div>
                 <div className="default-spacing">
-                    <div className="grid grid-cols-2 gap-5">
+                    <div className="grid md:grid-cols-2 gap-5">
                         <p>© Copyright 2021 Structure Financial, Inc. All Rights Reserved.
                             Neither Elon Musk nor Tim Cook are customers of Structure Financial, Inc.
                             Zero-commission refers to $0 commissions for accounts that trade tokenized assets via mobile devices. Please see our Commission and Fee Schedule.

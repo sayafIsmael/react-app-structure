@@ -71,6 +71,16 @@
   max-width: 978px;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
 
 @media only screen and (max-width: 768px) {
   .default-spacing{
@@ -122,6 +132,10 @@
     background-repeat: no-repeat;
     @apply w-full p-5 text-center;
   }
-  
 
+  .menu-scroll{
+    width: 636px
+  }
 }
+
+
