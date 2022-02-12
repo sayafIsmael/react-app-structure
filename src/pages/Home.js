@@ -267,8 +267,8 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="default-spacing container mx-auto md:hidden">
-                <div className="grid lg:grid-cols-2 gap-4">
+            <div className="default-spacing md:hidden">
+                <div className="grid lg:grid-cols-2 gap-4 container mx-auto">
                     <div className="sm:w-full my-auto sm:order-last">
                         <div className="my-auto">
                             <h2 className='default-header font-medium'>Buy stocks with crypto</h2>
