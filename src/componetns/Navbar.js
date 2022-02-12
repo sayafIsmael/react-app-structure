@@ -4,6 +4,7 @@ import {
 import Modal from 'react-modal';
 import codes from "../data/country.json"
 import React, { useState } from "react";
+import mobile from 'is-mobile';
 
 const customStyles = {
     content: {
