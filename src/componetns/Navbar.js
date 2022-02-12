@@ -20,7 +20,8 @@ export default () => {
                         <img alt="" src="/images/logo.png" />
                     </Link>
                     <div className="md:hidden cursor-pointer" onClick={() => setTogleMenue(!togleMenue)}>
-                        <img alt="" src="/images/menu.png" />
+                        {!togleMenue && <img alt="" src="/images/menu.png" />}
+                        {togleMenue && <img alt="" src="/images/close-icon.png" />}
                     </div>
                     <ul className="md:flex text-center sm:hidden">
                         <li className="lg:block md:hidden"><Link to="#">All Assets</Link></li>
@@ -36,13 +37,17 @@ export default () => {
                         </div>
                     </div>
                 </div>
-                {togleMenue && <div className="-mt-5">
-                    <ul className="bg-white md:hidden absolute w-full my-5 shadow shadow-b">
-                        <li className="text-center my-2"><Link to="#">All Assets</Link></li>
-                        <li className="text-center my-2"><Link to="#">Stocks </Link></li>
-                        <li className="text-center my-2"><Link to="#">Crypto </Link></li>
-                        <li className="text-center my-2"><Link to="#">Trade </Link></li>
+                {togleMenue && <div className="z-10 absolute bg-white shadow shadow-b h-full md:hidden w-full">
+                    <ul className="container mx-auto">
+                        <li className="my-6 text-lg"><Link to="#">All Assets</Link></li>
+                        <li className="my-6 text-lg"><Link to="#">Stocks </Link></li>
+                        <li className="my-6 text-lg"><Link to="#">Crypto </Link></li>
+                        <li className="my-6 text-lg"><Link to="#">Trade </Link></li>
                     </ul>
+                    <div className="container mx-auto mt-20">
+                        <a className="nav-btn cursor-pointer">Sign up today and get no-fee trading for life.</a>
+                        <button className="btn-nav w-full mt-10">Get the app</button>
+                    </div>
                 </div>}
             </nav>
         </header>
