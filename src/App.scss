@@ -13,7 +13,7 @@
 }
 
 .input-height{
-  height: 70px;
+  height: 60px;
 }
 
 .btn-main {
@@ -82,6 +82,13 @@
   scrollbar-width: none; /* Firefox */
 }
 
+.signup-box{
+  max-width: 490px;
+}
+
+.menu-scroll{
+  width: 636px
+}
 
 @media only screen and (max-width: 768px) {
   .default-spacing{
@@ -133,8 +140,12 @@
     background-repeat: no-repeat;
     @apply w-full p-5 text-center;
   }
-}
 
-.menu-scroll{
-  width: 636px
+  .ReactModal__Content--after-open {
+    padding: 0px !important;
+  }
+
+  .signup-box{
+    max-width: '100%';
+  }
 }
